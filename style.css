@@ -1,6 +1,5 @@
-body
-{
-text-align: center;
+body{
+    text-align: center;
 }
 .heading{
     width: 100%;
@@ -13,6 +12,20 @@ text-align: center;
     float: right;
     border: 3px solid white;
 }
+
 #start,#status{
     font-size: 22px;
+}
+h4{    
+    color: darkgray;
+    bottom: 0;
+    width:100%;
+    background-color: rgb(245, 147, 245);
+    line-height: 2;
+    text-align: center;
+    position: fixed;
+    
+}
+.modal-dialog{
+    width: 90%;
 }
