@@ -16,16 +16,11 @@ body{
 #start,#status{
     font-size: 22px;
 }
-h4{    
-    color: darkgray;
-    bottom: 0;
-    width:100%;
-    background-color: rgb(245, 147, 245);
-    line-height: 2;
-    text-align: center;
-    position: fixed;
-    
-}
 .modal-dialog{
     width: 90%;
+}
+canvas{
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px white;
+    border: 2px solid white;
 }
