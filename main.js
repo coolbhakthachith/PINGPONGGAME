@@ -91,10 +91,9 @@ function draw(){
     //left paddle
     fill(250,0,0);
     stroke(0,0,250);
-
     strokeWeight(0.5);
     paddle1Y = rightWristY; 
-    rect(paddle1X,paddle1Y,paddle1,paddle1Height,200);
+    rect(paddle1X,paddle1Y,paddle1,paddle1Height,100);
 
 
     //pc computer paddle
@@ -131,11 +130,11 @@ function reset(){
 
 //function midline draw a line in center
 function midline(){
-    for(i=0;i<481;i+=11) {
+    for(i=0;i<480;i+=10) {
     var y = 0;
     fill("white");
     stroke(0);
-    rect(width/2,y+i,11,481);
+    rect(width/2,y+i,10,480);
     }
 }
 
@@ -144,7 +143,7 @@ function midline(){
 function drawScore(){
     textAlign(CENTER);
     textSize(20);
-    fill("rgb");
+    fill("white");
     stroke(250,0,0)
     text("Player:",100,50)
     text(playerscore,140,50);
@@ -173,7 +172,7 @@ function move(){
     pcscore++;
     missed.play();
     reset();
-    navigator.vibrate(100);
+    navigator.vibrate(101);
   }
 }
 if(pcscore ==4){
@@ -184,7 +183,7 @@ if(pcscore ==4){
     stroke("white");
     textSize(25);
     text("Game Over!",width/2,height/2);
-    text("PRESS THE RESTART BUTTON FOR THE GAME!!!!!!!!!!",width/2,height/2+30)
+    text("Press Restart button to play again!",width/2,height/2+30)
     noLoop();
     pcscore = 0;
  }
@@ -192,9 +191,6 @@ if(pcscore ==4){
        ball.dy =- ball.dy;
    }   
 }
-
-
-
 
 
 //width height of canvas speed of ball 
